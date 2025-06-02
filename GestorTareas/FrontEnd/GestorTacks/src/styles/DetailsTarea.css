@@ -1,0 +1,98 @@
+/* Contenedor principal */
+.details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.details-container:hover {
+  transform: scale(1.03);
+}
+
+/* Título de la tarea */
+.details-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de la información */
+.details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Estilos para los párrafos */
+.details-text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.details-text span {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Contenedor de los botones */
+.details-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+/* Enlace para volver */
+.details-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.details-link:hover {
+  color: #1e40af;
+}
+
+/* Botón de eliminar */
+.details-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #dc2626;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.details-button:hover {
+  background-color: #b91c1c;
+  transform: scale(1.05);
+}
+
+.details-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(220, 38, 38, 0.5);
+}
+
+/* Mensajes de carga y error */
+.loading-message {
+  font-size: 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+.error-message {
+  font-size: 1.5rem;
+  color: #dc2626;
+  text-align: center;
+}

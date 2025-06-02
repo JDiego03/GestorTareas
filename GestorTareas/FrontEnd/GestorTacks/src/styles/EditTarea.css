@@ -1,0 +1,90 @@
+/* Contenedor principal */
+.edit-tarea-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.edit-tarea-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Mensajes */
+.edit-tarea-message {
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Grupo de entrada */
+.edit-tarea-input-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-tarea-input-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.edit-tarea-input-group input,
+.edit-tarea-input-group textarea,
+.edit-tarea-input-group select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.edit-tarea-input-group input:focus,
+.edit-tarea-input-group textarea:focus,
+.edit-tarea-input-group select:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 3px #3182ce;
+}
+
+/* Botón */
+.edit-tarea-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3182ce;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-tarea-button:hover {
+  background-color: #2b6cb0;
+}
+
+.edit-tarea-button:focus {
+  outline: none;
+  box-shadow: 0 0 3px #63b3ed;
+}
+
+/* Mensaje de carga */
+.loading-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 2rem;
+}

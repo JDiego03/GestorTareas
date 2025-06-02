@@ -1,0 +1,76 @@
+/* Contenedor del formulario */
+.create-tipo-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  max-width: 420px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.create-tipo-container:hover {
+  transform: scale(1.03); /* Efecto de agrandar ligeramente al pasar el ratón */
+}
+
+/* Estilo del formulario */
+.create-tipo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Mayor espacio entre los campos */
+}
+
+/* Contenedor de los inputs */
+.create-tipo-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Estilo de la etiqueta */
+.create-tipo-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a90e2; /* Azul claro */
+  text-transform: uppercase;
+}
+
+/* Estilo del input */
+.create-tipo-input {
+  padding: 1rem;
+  border: 2px solid #e1e1e1; /* Borde gris claro */
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  color: #333333; /* Color de texto más oscuro */
+  outline: none;
+  background-color: #f4f7fa; /* Fondo gris claro */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-tipo-input:focus {
+  border-color: #4a90e2; /* Azul al enfocar */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.6); /* Sombra azul más intensa */
+}
+
+/* Estilo del botón */
+.create-tipo-button {
+  padding: 1rem;
+  background-color: #4a90e2; /* Azul suave */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-tipo-button:hover {
+  background-color: #357ab7; /* Azul más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de mover hacia arriba el botón */
+}
+
+.create-tipo-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.8); /* Sombra azul al enfocar */
+}

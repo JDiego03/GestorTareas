@@ -1,0 +1,118 @@
+/* Header.css */
+
+/* Panel izquierdo */
+.container-Header {
+  background-color: #333;
+  color: white;
+  width: 250px; /* Aumenté el ancho para una mejor disposición */
+  height: 100vh; /* Alcanza todo el alto de la pantalla */
+  padding: 20px;
+  position: fixed; /* Fijo a la izquierda */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 2px solid #444;
+  z-index: 10; /* Asegura que el panel quede sobre otros elementos */
+}
+
+.container-Header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.container-Header h3 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container-Header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container-Header li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container-Header li:hover {
+  background-color: #f9a8d4;
+  transform: translateX(5px);
+}
+
+.container-Header li p {
+  margin: 0;
+}
+
+.container-tipoTarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white; /* Color destacado para los tipos de tarea */
+}
+
+.boton-delete {
+  background-color: transparent;
+  color: red;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.boton-delete:hover {
+  color: #d9534f;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #f9a8d4;
+  text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.disabled-link {
+  pointer-events: none;
+  color: gray;
+  text-decoration: none;
+}
+
+.disabled {
+  color: gray;
+}

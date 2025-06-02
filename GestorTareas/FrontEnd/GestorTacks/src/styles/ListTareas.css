@@ -1,0 +1,279 @@
+/* Estilo global */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para el contenido principal */
+section.container-ListaTareas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: calc(
+    100% - 220px
+  ); /* Restamos 220px por el ancho del panel del header */
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 240px; /* Empujamos la sección a la derecha para que no se sobreponga con el panel */
+  margin-top: 40px; /* Espacio entre el header y la sección */
+}
+
+/* Contenedor de las tareas */
+.container-tareas {
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo para el encabezado de la sección de tareas */
+h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo para la lista de tareas usando grid */
+.listTareas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px; /* Espacio entre las tarjetas */
+  width: 100%;
+  justify-items: center; /* Alinea las tarjetas al centro de cada celda */
+  margin-top: 0;
+}
+
+/* Estilo de cada tarjeta de tarea */
+.tarea-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%; /* Hace que las tarjetas ocupen el 100% del espacio de cada celda */
+  max-width: 250px; /* Ancho máximo para que no se expandan demasiado */
+  box-sizing: border-box; /* Asegura que el padding y los márgenes no afecten el tamaño */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarea-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tarea-card h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tarea-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.tarea-card p strong {
+  color: #333;
+}
+
+/* Estilo para los botones dentro de las tarjetas */
+button,
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Estilo de la sección del botón para crear tarea */
+.cont-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cont-button .button {
+  margin: 10px;
+  background-color: #28a745; /* Color verde para resaltar la acción */
+}
+
+.cont-button .button:hover {
+  background-color: #218838; /* Color más oscuro en hover */
+}
+
+/* Estilo de la carga y mensajes */
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Estilo de los enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mensajes de error o vacíos */
+.no-tareas {
+  font-size: 1.2rem;
+  color: #dc3545;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media queries para dispositivos pequeños (móviles) */
+@media (max-width: 1200px) {
+  .listTareas {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 900px) {
+  .listTareas {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 600px) {
+  .listTareas {
+    grid-template-columns: 1fr; /* 1 columna en pantallas extra pequeñas (móviles) */
+  }
+}
+
+/* Estilos generales para los filtros */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Estilos para las etiquetas */
+.filters label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para los inputs de fecha */
+.filters input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.filters input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilos de los inputs cuando están vacíos */
+.filters input[type="date"]:invalid {
+  border-color: red;
+}
+
+/* Estilo para el contenedor de los filtros */
+.filters .filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Agregar margen superior a los filtros */
+.container-ListaTareas {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 320px; /* Establece un ancho máximo para hacerlo más compacto */
+  margin: 0 auto; /* Centra el contenido */
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.filter-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px; /* Espacio entre el botón y el resto */
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}

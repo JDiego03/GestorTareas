@@ -1,0 +1,108 @@
+/* Contenedor principal */
+.cont-form-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+p {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* Tarjeta del formulario */
+.cont-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.cont-form-login h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Contenedor de los inputs */
+.cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+.cont label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.cont input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background: #fafafa;
+}
+
+/* Efecto en el input al enfocar */
+.cont input:focus {
+  border-color: #007bff;
+  outline: none;
+  background: white;
+}
+
+/* Botón de envío */
+button.botonLogin {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Mensajes */
+.message-container {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Mensaje de error */
+.message-container .error {
+  color: red;
+}
+
+/* Mensaje de éxito */
+.message-container .success {
+  color: green;
+}
+
+/* Responsivo */
+@media (max-width: 400px) {
+  .cont-form {
+    padding: 30px;
+  }
+}

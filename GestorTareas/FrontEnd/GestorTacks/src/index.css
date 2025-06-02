@@ -1,0 +1,35 @@
+/* Paleta Colores 
+🎨 Elegante y Sofisticado
+Negro (#000000)
+Dorado (#FFD700)
+Blanco (#FFFFFF)
+Burdeos (#800020)
+🌿 Natural y Relajante
+Verde Salvia (#A8B5A2)
+Beige Arena (#D8C3A5)
+Marrón Tierra (#8D6743)
+Blanco Crema (#FAF3E0)
+🔥 Vibrante y Energético
+Naranja Brillante (#FF6F00)
+Amarillo Mostaza (#FFC300)
+Azul Eléctrico (#0074E4)
+Rojo Coral (#FF4F58)
+🎮 Moderno y Tecnológico
+Negro Mate (#1A1A1D)
+Azul Neón (#00D9FF)
+Púrpura Ciberpunk (#8A2BE2)
+Gris Oscuro (#4E4E50)
+🏡 Minimalista y Acogedor
+Blanco Roto (#F5F5F5)
+Gris Suave (#D3D3D3)
+Madera Clara (#C9A86A)
+Azul Grisáceo (#607D8B) */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333333;
+}
